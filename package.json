@@ -6,6 +6,7 @@
     "cz": "git-cz",
     "lint": "eslint .",
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "clear": "rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-*",
     "test": "jest"
   },
   "dependencies": {

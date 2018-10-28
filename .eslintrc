@@ -12,6 +12,8 @@
     "react-native/react-native": true
   },
   "rules": {
+    "jsx-quotes": ["error", "prefer-single"],
+    "quotes": ["error", "single"],
     "react/jsx-filename-extension": [
       1,
       {

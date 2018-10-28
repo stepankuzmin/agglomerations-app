@@ -13,6 +13,15 @@ Clone source code
 ```sh
 git clone https://github.com/stepankuzmin/agglomerations.app.git
 cd agglomerations.app
+yarn
+```
+
+Install Pods
+
+```sh
+cd ios
+pod install
+cd ..
 ```
 
 Create `.env` file with your Mapbox [access token](https://www.mapbox.com/account/access-tokens/)
