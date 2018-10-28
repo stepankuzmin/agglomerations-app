@@ -1,39 +1,27 @@
 /**
- * @format
  * @flow
  */
 
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import Config from "react-native-config";
+import MapboxGL from "@mapbox/react-native-mapbox-gl";
+import { StyleSheet } from "react-native";
+
+MapboxGL.setAccessToken(Config.MAPBOX_ACCESS_TOKEN);
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.welcome}>Agglomerations.org</Text>
-      <Text style={styles.instructions}>To get started, edit App.js</Text>
-    </View>
+    <MapboxGL.MapView
+      zoomLevel={1}
+      style={styles.map}
+      styleURL="mapbox://styles/mapbox/streets-v9"
+    />
   );
 };
 
-const containerBackgroundColor = "#F5FCFF";
-const instructionsColor = "#333333";
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: containerBackgroundColor
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: instructionsColor,
-    marginBottom: 5
+  map: {
+    flex: 1
   }
 });
 
