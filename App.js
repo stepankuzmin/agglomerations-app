@@ -9,7 +9,7 @@ import { StyleSheet, Text, View } from "react-native";
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!111</Text>
+      <Text style={styles.welcome}>Agglomerations.org</Text>
       <Text style={styles.instructions}>To get started, edit App.js</Text>
     </View>
   );
